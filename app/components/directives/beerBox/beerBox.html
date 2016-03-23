@@ -1,0 +1,28 @@
+<div class="row beer-preview-box">
+	<div class="col-xs-12 col-sm-5 col-md-3 img-place">
+		<img class="img-responsive" ng-src="images/beer/{{beer.picture}}" />
+	</div>
+	<div class="col-xs-12 col-sm-7 col-md-9">
+		<div class="date">{{beer.brew_date}}</div>
+		<div class="title"><a href="#/beer/{{beer.id}}">{{beer.name}}</a></div>
+		<div class="genre">{{beer.genre}}</div>
+		<div class="params">
+			<div class="blg">{{beer.blg}}<span>Blg</span></div>
+			<div class="litres">{{beer.litres}}<span>L</span></div>
+			<div class="alk">{{beer.alk}}</div>
+		</div>
+		<div class="description" ng-bind-html="beer.style"></div>
+		<div class="grains">
+			<ul>
+				<li><span>Słody:</span></li>
+				<li ng-repeat="grain in beer.recipe.grains">{{grain.name}}</li>
+			</ul>
+		</div>
+		<div class="hops">
+			<ul>
+				<li><span>Chmiele:</span></li>
+				<li ng-repeat="hop in beer.recipe.hops">{{hop.name}}</li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+<latest-beer-dctv></latest-beer-dctv>
+
+<div class="row">
+    <div class="col-xs-12 tab-title">Kategorie</div>
+</div>
+<div class="row categories">
+    <div class="col-md-4 col-sm-4 col-xs-6 beer-box" ng-hide="!loaded" ng-repeat="category in beersCategories">
+        <a href="#/beerCategory/{{category.name}}">
+            <span>{{category.name}}</span><br/>
+            <img class="img-responsive" ng-src="images/{{category.picture}}" />
+        </a>
+    </div>
+</div>

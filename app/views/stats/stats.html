@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-xs-12">
+    
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <span class="stat-name">Uwarzonych litrów</span>
+        <span class="stat-value">{{statistics.litres}} L</span>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <span class="stat-name">Użytych słodów</span>
+        <span class="stat-value">{{statistics.used_grains}} kg</span>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <span class="stat-name">Użytych chmieli</span>
+        <span class="stat-value">{{statistics.used_hops}} kg</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <span class="stat-name">Najmocniejsze piwo</span>
+        <span class="stat-value">{{statistics.best_alk.alk}} %</span>
+        <span class="stat-value">{{statistics.best_alk.name}}</span>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <span class="stat-name">Największe Blg</span>
+        <span class="stat-value">{{statistics.best_blg.blg}} Blg</span>
+        <span class="stat-value">{{statistics.best_blg.name}}</span>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <span class="stat-name">Największa wydajność</span>
+        <span class="stat-value">{{statistics.best_performance.value}} %</span>
+        <span class="stat-value">{{statistics.best_performance.name}}</span>
+      </div>
+      
+    </div>
+
+    <div class="row">
+	   	<div class="col-xs-12 col-md-6">
+	      	<div class="stat-name">Top 7 słodów</div>
+	        <div google-chart class="stat-chart" chart="grainChart" style="height: 480px; width: 100%; margin: 0 auto;"></div>
+	    </div>
+
+	    <div class="col-xs-12 col-md-6">
+	      	<div class="stat-name">Top 7 chmieli</div>
+	        <div google-chart class="stat-chart" chart="hopChart" style="height: 480px; width: 90%; margin: 0 auto;"></div>
+	    </div>
+
+    	<!--<div class="col-xs-12 col-md-6">
+	      	<div class="stat-name">Rozkład według kategorii</div>
+	        <div google-chart class="stat-chart" chart="categoryPieChart" style="height: 400px; width: 40%; margin: 0 auto;"></div>
+	    </div>
+
+	    <div class="col-xs-12 col-md-6">
+	      	<div class="stat-name">Rozkład wg ??</div>
+	        <div google-chart class="stat-chart" chart="PieChart" style="height: 400px; width: 40%; margin: 0 auto;"></div>
+	    </div>-->
+
+    	<div class="col-xs-12">
+      		<div class="stat-name">Ilość warek w miesiącu</div>
+        	<div google-chart class="stat-chart" chart="monthChart" style="height: 480px; width: 90%; margin: 0 auto;"></div>
+      	</div>
+    
+
+    </div>
+
+  </div>
+</div>

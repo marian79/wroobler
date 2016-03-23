@@ -1,0 +1,84 @@
+* {
+  font-family: 'Oswald', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400; 
+}
+
+html, 
+body {
+  background: url('../images/bg-gray.jpg') no-repeat 0 0 transparent;
+  background-size: cover;
+  background-position: fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+strong {
+  font-size: 20px;
+  margin-top: 20px;
+  display: block;
+  font-weight: 400;
+  color: #000;
+  .black-panel & {
+    color: #fff;
+  }
+}
+
+.header {
+  text-align: center;
+  a, span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 15px;
+    img {
+      position: relative;
+      top: -15px;
+    }
+  }
+}
+
+.tab-title {
+  font-size: 34px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: auto;
+  text-align: center;
+  padding: 0px 20px 4px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.black-panel {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /*padding: 20px;*/
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  /*margin-bottom: 20px;
+  border-radius: 0px 4px 4px 4px;*/
+}
+
+.categories {
+  border-top: 1px solid $border-color;
+}
+
+.recipe-link {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  a {
+    font-size: 20px;
+    color: #fff;
+  }
+}
