@@ -1,2 +1,2 @@
 # wroobler
-Diary of a Homebrewer
+Diary of a Homebrewer created in Angular.js
