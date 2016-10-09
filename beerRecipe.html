@@ -1,0 +1,88 @@
+<div class="row">
+	<div class="col-xs-12 beer-preview-box">
+
+		<div class="col-xs-12 col-sm-5 col-md-3 img-place">
+			<img class="img-responsive" ng-src="images/beer/{{beer.picture}}" />
+		</div>
+		<div class="col-xs-12 col-sm-7 col-md-9">
+			<div class="date">{{beer.brew_date}}</div>
+			<div class="title">{{beer.name}}</div>
+			<div class="genre">{{beer.genre}}</div>
+			<div class="params">
+				<div class="blg">{{beer.blg}}<span>Blg</span></div>
+				<div class="litres">{{beer.litres}}<span>L</span></div>
+				<div class="alk" title="Alkohol">{{beer.alk}}</div>
+				<div class="eff" title="Wydajność">{{beer.efficiency}}<span>%</span></div>
+			</div>
+			<div class="description" ng-bind-html="beer.style"></div>
+			<div class="ingredients hidden-xs">
+				<div class="title"><img src="images/ingredients/malt.png" /></div>
+				<div class="title"><img src="images/ingredients/hops.png" /></div>
+				<div class="title"><img src="images/ingredients/yeast.png" /></div>
+			</div>
+			<div class="ingredients">
+				<div class="list">
+					<span class="title visible-xs">Słody</span>
+					<ul><li ng-repeat="grain in beer.recipe.grains">
+						<span class="weight">{{grain.weight}}kg</span>{{grain.name}}</li></ul>
+				</div>
+				<div class="list">
+					<span class="title visible-xs">Chmiele</span>
+					<ul><li ng-repeat="hop in beer.recipe.hops">
+						<span class="weight">{{hop.weight}}g</span>{{hop.name}}</li></ul>
+				</div>
+				<div class="list">
+					<span class="title visible-xs">Drożdże</span>
+					<ul><li>{{beer.recipe.yeast.name}}</li></ul>
+				</div>
+			</div>
+			<div class="others" ng-show="beer.recipe.others">
+				<ul>
+					<li><span>Dodatki:</span></li>
+					<li ng-repeat="other in beer.recipe.others">
+						<span class="weight">{{other.weight}}g</span> {{other.name}}</li></ul>
+			</div>
+			<div class="mash">
+				<div class="start">Zasyp:</div>
+				<ul>
+					<li>
+						<i class="fa fa-tachometer"></i><span>{{beer.recipe.start.temperature}}</span>
+						<i class="fa fa-flask"></i><span>{{beer.recipe.start.litres}}L</span></li>
+				</ul>
+				<div class="title">Zacieranie:</div>
+				<ul>
+					<li ng-repeat="pos in beer.recipe.mash">
+						<i class="fa fa-tachometer"></i><span>{{pos.temperature}}</span>
+						<i class="fa fa-clock-o"></i><span>{{pos.time}}min</span></li>
+				</ul>
+			</div>
+			<div class="filtering">
+				<span class="title">Filtracja:</span>
+				<ul>
+					<li>do uzyskania <span>{{beer.recipe.filtering}}L</span> brzeczki</li>
+				</ul>
+			</div>
+			<div class="cooking">
+				<span class="title">Gotowanie:</span><i class="fa fa-clock-o"></i>{{beer.recipe.cooking.time}}min
+				<ul>
+					<li class="hopping" ng-repeat="hopping in beer.recipe.cooking.hopping">
+						<div ng-repeat="(hop, time) in hopping" class="hop"><span>{{hop}}</span> <i class="fa fa-clock-o"></i>{{time}}min</div>
+					</li>
+				</ul>
+			</div>
+			<div class="fermentation-silent" ng-show="beer.recipe.fermentation.length > 0">
+				<span class="title">Fermentacja cicha:</span>
+				<ul>
+					<li class="hopping" ng-repeat="ferment in beer.recipe.fermentation">
+						<span>{{ferment}}</span>
+					</li>
+				</ul>
+			</div>
+			<div class="notes">
+				<div class="title">Notatki</div>
+				<ul><li ng-repeat="note in beer.notes" ng-bind-html="note"></li></ul>
+			</div>
+		</div>
+
+	</div>
+</div>
