@@ -404,7 +404,7 @@
 		},
 		"fermentation": [
 			"Amarillo 70g na 7 dni"
-		]	
+		]
 	},
 	"notes": [
 		"<p><i>Kolor:</i> jasny, złocisto-bursztynowy</p>",
@@ -469,7 +469,7 @@
 		"yeast": {
 			"name": "M20 Bavarian Wheat",
 			"temperature": "25°C"
-		}	
+		}
 	},
 	"notes": [
 		"<p>Niestety piwo najprawdopodobniej złapało infekcję. Pieniło się nieziemsko. Nawet po 24h w temperaturze minusowej, po otwarciu butelki wystrzeliwał gejzer z piany. 2 butelki nie wytrzymały i eksplodowały.Kilka sztuk wypiłem, ale smak nie zachwycał. Poza tym był zabijany przez zbyt duże nagazowanie.<br/><br/>Efekt - poszło w kanał. Może następne będzie lepsze.</p>"
@@ -534,7 +534,7 @@
 		"yeast": {
 			"name": "Safale US-05",
 			"temperature": "23°C"
-		}	
+		}
 	},
 	"notes": [
 		"<p>Bezstylowiec z resztek słodów, chmieli i drożdży.</p>",
@@ -610,7 +610,7 @@
 		},
 		"fermentation": [
 			"Chmielenie na zimno z użyciem Cascade (20g) i Galaxy (20g) - 7 dni"
-		]	
+		]
 	},
 	"notes": [
 		"<p>AIPA przygotowana na zlot fanów Forda Explorera :)</p>",
@@ -683,7 +683,7 @@
 		"fermentation": [
 			"Chmielenie na zimno z użyciem Cascade (25g) - 7 dni"
 		],
-		"bottling": "6g/1L"	
+		"bottling": "6g/1L"
 	},
 	"notes": []
 }, {
@@ -748,7 +748,7 @@
 			"name": "M20 Bavarian Wheat",
 			"temperature": "25°C"
 		},
-		"bottling": "8g/1L"	
+		"bottling": "8g/1L"
 	},
 	"notes": [
 		"<p><i>Barwa:</i> jasny słomkowy, lekko opalizujący</p>",
@@ -813,7 +813,7 @@
 			"name": "Bavarian Wheat M20 Mangrove Jack",
 			"temperature": "24°C"
 		},
-		"bottling": "7g/1L"	
+		"bottling": "7g/1L"
 	},
 	"notes": [
 		"<p>Pierwszy pomiar Blg zrobiłem następnego ranka po nocnym warzeniu (przez całą noc piwo się chłodziło). Aromat świetny, w smaku bardzo czuć maliny. Zobaczymy, czy nie będzie zbyt wytrawne jak drożdże zrobią swoje.</p>",
@@ -883,7 +883,7 @@
 			"name": "Safale S-04",
 			"temperature": "25°C"
 		},
-		"bottling": "5g/1L"	
+		"bottling": "5g/1L"
 	},
 	"notes": []
 }, {
@@ -957,7 +957,7 @@
 		"yeast": {
 			"name": "Fermentis S-05",
 			"temperature": "25°C"
-		}	
+		}
 	},
 	"notes": [
 		"<p>W czasie fermentacji bardzo wyczuwalny <b>octan etylu</b> w smaku i w zapachu. Z dnia na dzień coraz bardziej. Po 3 tygodniach piwo poszło w kanał :(</p>"
@@ -1025,7 +1025,7 @@
 			"name": "Wyeast 1084",
 			"temperature": "22°C"
 		},
-		"bottling": "Xg/1L"	
+		"bottling": "Xg/1L"
 	},
 	"notes": [
 		"<p>Pierwsze piwo z wykorzystaniem płynnych drożdży. Po burzliwej zebrana gęstwa do uwarzenia Oak-y Doak-y</p>"
@@ -1096,7 +1096,7 @@
 		"fermentation": [
 			"Chmielenie na zimno z użyciem płatków dębowych (20g) - 7 dni"
 		],
-		"bottling": "8g/1L"	
+		"bottling": "8g/1L"
 	},
 	"notes": [
 		"<p>Wykorzystałem gęstwę Wyeast 1084 z Rednecka.</p>"
@@ -1205,7 +1205,7 @@
 		"fermentation": [
 			"Chmielenie na zimno z użyciem chmieli Columbus (40g), Amarillo (40g), Citra (40g) i Simcoe (40g)"
 		],
-		"bottling": "6g/1L"	
+		"bottling": "6g/1L"
 	},
 	"notes": [
 		"<p></p>"
@@ -1296,7 +1296,7 @@
 		"fermentation": [
 			""
 		],
-		"bottling": "7g/1L"	
+		"bottling": "7g/1L"
 	},
 	"notes": [
 		"<p></p>"
@@ -1367,7 +1367,7 @@
 		"fermentation": [
 			""
 		],
-		"bottling": "4g/1L"	
+		"bottling": "4g/1L"
 	},
 	"notes": [
 		"<p></p>"
@@ -1436,7 +1436,7 @@
 		"fermentation": [
 			""
 		],
-		"bottling": "Xg/1L"	
+		"bottling": "Xg/1L"
 	},
 	"notes": [
 		"<p></p>"
@@ -1512,7 +1512,7 @@
 		"fermentation": [
 			""
 		],
-		"bottling": "Xg/1L"	
+		"bottling": "Xg/1L"
 	},
 	"notes": [
 		"<p>W 4-tym dniu fermentacji burzliwej dodałem herbatkę z 1kg cukru kandyzowanego</p>"
@@ -1588,9 +1588,332 @@
 			"Ahtanum 25g na 7 dni",
 			"Citra 20g na 7 dni"
 		],
-		"bottling": "Xg/1L"	
+		"bottling": "Xg/1L"
 	},
 	"notes": [
 		"<p></p>"
+	]
+}, {
+	"id": 28,
+	"name": "Brat Wit",
+	"genre": "Wit IPA",
+	"category": "Wheat",
+	"style": "Wit IPA",
+	"brew_date": "2016-04-25",
+	"picture": "brat_wit.png",
+	"alk": "4.6%",
+	"blg": 11,
+	"litres": 22.5,
+	"recipe": {
+		"grains": [{
+			"name": "Pilzneński",
+			"weight": 2.0
+		}, {
+			"name": "Pszeniczny",
+			"weight": 1.0
+		}, {
+			"name": "Zakwaszający",
+			"weight": 0.1
+		}],
+		"hops": [{
+			"name": "Amarillo",
+			"weight": 50
+		}, {
+			"name": "Cascade",
+			"weight": 20
+		}, {
+			"name": "Styrian Goldings",
+			"weight": 15
+		}],
+		"others": [{
+			"name": "Płatki pszenne",
+			"weight": 500
+		}, {
+			"name": "Otręby pszenne prażone",
+			"weight": 500
+		}, {
+			"name": "Płatki owsiane",
+			"weight": 300
+		}, {
+			"name": "Curacao",
+			"weight": 6
+		}, {
+			"name": "Curacao",
+			"weight": 6
+		}, {
+			"name": "Kolendra",
+			"weight": 15
+		}, {
+			"name": "Skórka z 2 cytryn",
+			"weight": 2
+		}, {
+			"name": "Skórka z 2 pomarańczy",
+			"weight": 2
+		}],
+		"start": {
+			"temperature": "53°C",
+			"litres": 13
+		},
+		"mash": [{
+			"temperature": "50°C",
+			"time": "20"
+		}, {
+			"temperature": "62°C",
+			"time": "30"
+		}, {
+			"temperature": "72°C",
+			"time": "30"
+		}, {
+			"temperature": "76°C",
+			"time": "5"
+		}],
+		"filtering": 24,
+		"cooking": {
+			"time": "60",
+			"hopping": [{
+				"Styrian Goldings 15g": 60
+			}, {
+				"Cascade 15g": 10
+			}, {
+				"Kolendra 10g": 10
+			}, {
+				"Curacao 6g": 10
+			}, {
+				"Skórka z 1 pomarańczy": 10
+			}, {
+				"Skórka z 1 cytryny": 10
+			}, {
+				"Amarillo 5g": 1
+			}, {
+				"Cascade 5g": 1
+			}, {
+				"Kolendra 5g": 1
+			}, {
+				"Skórka z 1 pomarańczy": 1
+			}, {
+				"Skórka z 1 cytryny": 1
+			}]
+		},
+		"yeast": {
+			"name": "Fermentum Mobile FM20 Białe Walonki",
+			"temperature": "24°C"
+		},
+		"fermentation": [
+			"Amarillo 45g na 7 dni"
+		],
+		"bottling": "Xg/1L"
+	},
+	"notes": [
+		"<p>Za mało ciała - następnym razem dam więcej pszenicznego</p>"
+	]
+}, {
+	"id": 29,
+	"name": "Grappa",
+	"genre": "New Zeland AIPA",
+	"category": "AIPA & IPA",
+	"style": "AIPA",
+	"brew_date": "2016-05-03",
+	"picture": "empty.png",
+	"alk": "5.4%",
+	"blg": 16,
+	"litres": 22,
+	"recipe": {
+		"grains": [{
+			"name": "Pale Ale",
+			"weight": 5.0
+		}, {
+			"name": "Pszeniczny",
+			"weight": 1.0
+		}],
+		"hops": [{
+			"name": "Ella",
+			"weight": 150
+		}, {
+			"name": "Sybilla",
+			"weight": 20
+		}, {
+			"name": "Cascade",
+			"weight": 35
+		}],
+		"others": [],
+		"start": {
+			"temperature": "68°C",
+			"litres": 18
+		},
+		"mash": [{
+			"temperature": "64°C",
+			"time": "60"
+		}, {
+			"temperature": "75°C",
+			"time": "10"
+		}],
+		"filtering": 25,
+		"cooking": {
+			"time": "60",
+			"hopping": [{
+				"Sybilla 20g": 60
+			}, {
+				"Cascade 35g": 1
+			}, {
+				"Ella 75g": 1
+			}]
+		},
+		"yeast": {
+			"name": "Fermentum Mobile FM52 Amerykański Sen",
+			"temperature": "X°C"
+		},
+		"fermentation": [
+			"Ella 75g na 10 dni"
+		],
+		"bottling": "Xg/1L"
+	},
+	"notes": [
+		"<p>W oryginalnej recepturze miało być 150g Galaxy, ale nie było go w paczce z TB :/ Musiałem ratować się tym, co miałem.</p>"
+	]
+}, {
+	"id": 30,
+	"name": "LemonIPAda",
+	"genre": "Lemon IPA",
+	"category": "AIPA & IPA",
+	"style": "IPA",
+	"brew_date": "2016-07-10",
+	"picture": "empty.png",
+	"alk": "6%",
+	"blg": 14,
+	"litres": 19,
+	"recipe": {
+		"grains": [{
+			"name": "Pale Ale",
+			"weight": 2.7
+		}, {
+			"name": "Pilzneński",
+			"weight": 1.5
+		}, {
+			"name": "Pszeniczny",
+			"weight": 0.7
+		}],
+		"hops": [{
+			"name": "Sorachi Ace",
+			"weight": 120
+		}],
+		"others": [{
+			"name": "Trawa cytrynowa",
+			"weight": 20
+		}, {
+			"name": "Skórki cytryny",
+			"weight": 30
+		}],
+		"start": {
+			"temperature": "70°C",
+			"litres": 14
+		},
+		"mash": [{
+			"temperature": "66°C",
+			"time": "60"
+		}, {
+			"temperature": "78°C",
+			"time": "10"
+		}],
+		"filtering": 24,
+		"cooking": {
+			"time": "60",
+			"hopping": [{
+				"Sorachi Ace 15g": 60
+			}, {
+				"Sorachi Ace 15g": 15
+			}, {
+				"Sorachi Ace 20g": 10
+			}, {
+				"Skórki cytryny 30g": 5
+			}, {
+				"Sorachi Ace 30g": 2
+			}, {
+				"Trawa cytrynowa 20g": 2
+			}]
+		},
+		"yeast": {
+			"name": "Wyeast 1272 American Ale II",
+			"temperature": "24°C"
+		},
+		"fermentation": [
+			"Sorachi Ace 40g na 7 dni"
+		],
+		"bottling": "6g/1L"
+	},
+	"notes": [
+		"<p>Pierwsza fermentacja w chłodziarce - temp. 18°C. Za nisko - wyszło sporo kokosa, który zdominował cytrynę.</p>"
+	]
+}, {
+	"id": 31,
+	"name": "SummerTime",
+	"genre": "Summer Ale",
+	"category": "Ale",
+	"style": "Ale",
+	"brew_date": "2016-10-08",
+	"picture": "empty.png",
+	"alk": "X%",
+	"blg": 12,
+	"litres": 19,
+	"recipe": {
+		"grains": [{
+			"name": "Pilzneński",
+			"weight": 2.0
+		}, {
+			"name": "Pszeniczny",
+			"weight": 0.3
+		}, {
+			"name": "Wiedeński",
+			"weight": 1.6
+		}, {
+			"name": "Karmelowy",
+			"weight": 0.4
+		}],
+		"hops": [{
+			"name": "Amarillo",
+			"weight": 20
+		}, {
+			"name": "Motueka",
+			"weight": 20
+		}, {
+			"name": "Galaxy",
+			"weight": 33
+		}],
+		"others": [],
+		"start": {
+			"temperature": "66°C",
+			"litres": 15
+		},
+		"mash": [{
+			"temperature": "63°C",
+			"time": "30"
+		}, {
+			"temperature": "73°C",
+			"time": "30"
+		}, {
+			"temperature": "78°C",
+			"time": "10"
+		}],
+		"filtering": 22,
+		"cooking": {
+			"time": "60",
+			"hopping": [{
+				"Galaxy 8g": 60
+			}, {
+				"Motueka 20g": 15
+			}, {
+				"Amarillo 20g": 10
+			}, {
+				"Galaxy 25g": 5
+			}]
+		},
+		"yeast": {
+			"name": "White Labs WLP001 California Ale",
+			"temperature": "24°C"
+		},
+		"fermentation": [],
+		"bottling": "6g/1L"
+	},
+	"notes": [
+		"<p>Pierwsze warzenie w Grainfatherze</p>"
 	]
 }]}

@@ -10,19 +10,26 @@ angular.module('wroobler.statsService', [])
 					performance = [],
 					statistics = {
 						'best_alk': {'alk': 0},
+						'avg_alk': 0,
 						'best_blg': {'blg': 0},
+						'avg_blg': 0,
 						'best_hop': {'weight': 0},
 						'used_grains': 0,
 						'used_hops': 0,
 						'litres': 0,
 						'best_performance': {},
+						'avg_performance': 0,
 						'months': {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0},
 						'categries': {}
-					};
+					},
+                    sum_alk = 0,
+                    sum_blg = 0,
+                    all_alk = 0,
+                    all_blg = 0;
 				$(beers).each(function() {
 					var date = new Date(this.brew_date);
 					statistics.months[date.getMonth()+1] += 1;
-					
+
 					if(this.hasOwnProperty("category")) {
 						if(statistics.categries[this.category] === undefined) {
 							statistics.categries[this.category] = 1;
@@ -30,16 +37,23 @@ angular.module('wroobler.statsService', [])
 							statistics.categries[this.category] += 1;
 						}
 					}
-					
+
 					if(this.hasOwnProperty("litres"))
 						statistics.litres += this.litres;
-					if(this.hasOwnProperty("blg"))
-						if(parseFloat(this.blg) > parseFloat(statistics.best_blg.blg)) {
+					if(this.hasOwnProperty("blg")) {
+                        sum_blg += parseFloat(this.blg);
+                        all_blg += 1;
+                        if(parseFloat(this.blg) > parseFloat(statistics.best_blg.blg)) {
 							statistics.best_blg = {'blg': this.blg, 'name': this.name};
 						}
+                    }
 					if(this.hasOwnProperty("alk")) {
 						var alk = this.alk.replace('%', '').replace(',', '.');
-						if(parseFloat(alk) > parseFloat(statistics.best_alk.alk)) {
+                        if(!isNaN(alk)) {
+                            sum_alk += parseFloat(alk);
+                            all_alk += 1;
+                        }
+                        if(parseFloat(alk) > parseFloat(statistics.best_alk.alk)) {
 							statistics.best_alk = {'alk': alk, 'name': this.name};
 						}
 					}
@@ -72,20 +86,22 @@ angular.module('wroobler.statsService', [])
 				});
 				statistics.used_grains = (statistics.used_grains).toFixed(2);
 				statistics.used_hops = (statistics.used_hops / 1000).toFixed(2);
-				
+
 				var grains_sorted = Object.keys(grain_bars).map(function (key) { return grain_bars[key]; });
 				var hops_sorted = Object.keys(hop_bars).map(function (key) { return hop_bars[key]; });
 				grains_sorted.sort(function(a,b){return b-a});
 				hops_sorted.sort(function(a,b){return b-a});
-				
+
 				var max_grains = Math.max.apply(null, grains_sorted);
 				var max_hops = Math.max.apply(null, hops_sorted);
-				
+
 				statistics.top_grains = this.getTopGrains(grain_bars, grains_sorted);
 				statistics.top_hops = this.getTopHops(hop_bars, hops_sorted);
 				statistics.best_hop = this.getBestHop(hop_bars);
 				statistics.best_performance = this.getBestPerformance(performance);
 
+                statistics.avg_alk = parseFloat(sum_alk / all_alk).toFixed(2);
+                statistics.avg_blg = parseFloat(sum_blg / all_blg).toFixed(2);
 				return statistics;
 			},
 

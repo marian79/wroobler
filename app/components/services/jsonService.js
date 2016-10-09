@@ -2,7 +2,7 @@
 
 angular.module('wroobler.json', [])
 
-    .service('jsonService', function($http) {
+    .service('jsonService', function($http, helperService) {
         return {
             getCategories: function() {
                 return $http.get('./components/services/beers.json').then(function(response) {
@@ -11,16 +11,23 @@ angular.module('wroobler.json', [])
             },
             getLatestBeer: function() {
                 return $http.get('./components/services/beers.json').then(function(response) {
-                    return response.data.beers.reverse()[0];
+                    var beer = response.data.beers.reverse()[0];
+                    beer.efficiency = helperService.setEfficiency(beer);
+                    return beer;
                 });
             },
             getBeers: function(category) {
                 return $http.get('./components/services/beers.json').then(function(response) {
                     var results = [];
-                    angular.forEach(response.data.beers, function(key, val) { 
-                        if(key.category === category || category === undefined) { 
-                            results.push(key); 
-                        } 
+                    angular.forEach(response.data.beers, function(key, val) {
+                        if(key.category === category || category === undefined) {
+                            if(key.recipe !== undefined) {
+                                key.efficiency = helperService.setEfficiency(key);
+                            } else {
+                                key.efficiency = 0;
+                            }
+                            results.push(key);
+                        }
                     });
                     return results;
                 });
@@ -28,10 +35,11 @@ angular.module('wroobler.json', [])
             getBeer: function(id) {
                 return $http.get('./components/services/beers.json').then(function(response) {
                     var beer = {};
-                    angular.forEach(response.data.beers, function(key, val) { 
-                        if(key.id == id) { 
+                    angular.forEach(response.data.beers, function(key, val) {
+                        if(key.id == id) {
+                            key.efficiency = helperService.setEfficiency(key);
                             beer = key;
-                        } 
+                        }
                     });
                     return beer;
                 });
@@ -44,7 +52,7 @@ angular.module('wroobler.json', [])
             searchBeers: function(query) {
                 return $http.get('./components/services/beers.json').then(function(response) {
                     var beers = _.filter(response.data.beers, function(beer) {
-                        return beer.name.toLowerCase().indexOf(query.toLowerCase()) > -1; 
+                        return beer.name.toLowerCase().indexOf(query.toLowerCase()) > -1;
                     });
                     return beers;
                 });

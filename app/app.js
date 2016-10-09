@@ -4,7 +4,7 @@ angular.module('wroobler', [
 	'ngRoute',
 	'ngSanitize',
 	'googlechart',
-	  
+
 	// directives
 	'wroobler.header',
 	'wroobler.latestBeer',
@@ -13,9 +13,10 @@ angular.module('wroobler', [
 	'wroobler.beerRecipe',
 
 	// services
+	'wroobler.helpers',
 	'wroobler.json',
 	'wroobler.statsService',
-	  
+
 	// views
 	'wroobler.beersList',
 	'wroobler.beerCategory',
